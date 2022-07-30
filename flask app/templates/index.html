@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+            <h1 style="margin-bottom: 7px;margin-top: 34px;">Welcome to MAD-I</h1>
+            <p class="lead">{{lu}}</p>
+            <p style="font-size: 22px;">AI based Advertisement Engine</p>
+            <div class="row">
+                <div class="col-md-8 col-lg-4 col-xl-4 offset-md-2 offset-lg-4 offset-xl-4">
+                    <div class="card border rounded shadow-lg" data-bs-hover-animate="pulse">
+                        <div class="card-body" style="height: 223px;">
+                            <h4 class="card-title">PRIVACY IS A MYTH</h4>
+                            <h6 class="text-muted card-subtitle mb-2" style="font-size: 36px;">Created by</h6><a class="card-link text-center d-flex d-sm-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center" href="#" style="font-size: 24px;">Aditya Lakkad</a><a class="card-link d-flex d-sm-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"
+                                href="https://www.linkedin.com/in/aditya-lakkad/" style="margin-left: 0;font-size: 24px;">Het Mehta</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">Recomandation</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="flip-up">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="{{ link[0] }}">
+                        <img class="img-fluid" src="/static/assets/img/portfolio/{{ img[0] }}"></a>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-up">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="{{ link[1] }}">
+                        <img class="img-fluid" src="/static/assets/img/portfolio/{{ img[1] }}"></a>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-up">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="{{ link[2] }}">
+                        <img class="img-fluid" src="/static/assets/img/portfolio/{{ img[2]}}"></a>
+                </div>
+                <!-- <div class="col-md-6 col-lg-4" data-aos="zoom-out-right">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="/static/assets/img/portfolio/game.png"></a>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-right">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="/static/assets/img/portfolio/safe.png"></a>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-right">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="/static/assets/img/portfolio/submarine.png"></a>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-down">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="/static/assets/img/portfolio/submarine.png"></a>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-down">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="/static/assets/img/portfolio/cake.png"></a>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-down">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="/static/assets/img/portfolio/cabin.png"></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg-primary text-white mb-0">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">About</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-4 ml-auto" data-aos="zoom-in">
+                    <p class="lead">MAD-I is using a speech recognition system built in vanila javascript to record the user voice and based on that it fetches the text from voice and sends it via an api for topic extraction</p>
+                </div>
+                <div class="col-lg-4 mr-auto" data-aos="zoom-in">
+                    <p class="lead">We have built NLP pipelines in python and we are serving it as rest apis in order to extract topics from user text. Based on topics we are displaying ads to improve user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contact US</h2>
+            <hr class="star-dark mb-5">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-2">
+                    <div class="card" data-bs-hover-animate="pulse">
+                        <div class="card-body border rounded">
+                            <h4 class="text-center card-title">Aditya Lakkad</h4><a class="card-link d-lg-flex justify-content-lg-center" href="#">Email : aaditya.lakkad@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" data-bs-hover-animate="pulse">
+                        <div class="card-body">
+                            <h4 class="text-center card-title">Het Mehta</h4><a class="card-link d-lg-flex justify-content-lg-center" href="#">Email : het.mehta@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © &nbsp;MAD-I 2021</small></div>
+    </div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">MAD-I</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const texts = document.querySelector(".texts");
+
+window.SpeechRecognition =
+  window.SpeechRecognition || window.webkitSpeechRecognition;
+
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;
+
+
+recognition.addEventListener("result", (e) => {
+
+  const text = Array.from(e.results)
+    .map((result) => result[0])
+    .map((result) => result.transcript)
+    .join("");
+  var logedinUserId = $('#my-data').data();
+  console.log(logedinUserId);
+  if(e.results[0].isFinal){
+    text.textContent = text;
+    console.log(text);
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://127.0.0.1:5000/api/v1/pushString');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = () => {
+      console.log('Sent');
+    };
+    console.log('{{lu}}');
+    xhr.send(JSON.stringify({
+      'user_id': '{{lu}}',
+      'string': text
+    }));
+  }
+  console.log(text);
+});
+recognition.addEventListener("end", () => {
+  recognition.start();
+});
+recognition.start();
+    </script>
+
+    {% endblock %}

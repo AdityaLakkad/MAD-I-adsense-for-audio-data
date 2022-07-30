@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+            <h1 style="margin-top: -120px;">Register</h1>
+            <hr class="star-light">
+        </div>
+        <div class="login-card">
+            <form class="form-signin" action="{{ url_for('register') }}" method="post">
+                <input class="border rounded border-primary form-control" type="text" id="inputEmail" name="Username" required="" placeholder="Username">
+                <input class="border rounded border-primary form-control" type="password" id="inputPassword" name="password" required="" placeholder="Password">
+                <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" style="background-color: rgb(24,188,156);">Register</button>
+            </form>
+                    <a class="forgot-password" href="/login" style="color: rgb(24,188,156);">Alreaday have an account ? Log in here</a>
+                </div>
+    </header>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © MAD-I 2021</small></div>
+    </div>
+{% endblock %}
